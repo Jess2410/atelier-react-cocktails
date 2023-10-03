@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-type CardCocktail = {
+export type CardCocktail = {
   strDrink: string;
   strDrinkThumb: string;
   strIngredient1?: string;
@@ -12,7 +12,7 @@ type CardCocktail = {
   strIngredient7?: string;
   strInstructions: string;
 };
-const Card = ({ cocktail }: CardCocktail) => {
+const Card = ({ cocktail }: { cocktail: CardCocktail }) => {
   const [open, setOpen] = useState(false);
 
   const onOpen = () => {

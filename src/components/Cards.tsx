@@ -1,6 +1,6 @@
-import Card from "./Card";
+import Card, { CardCocktail } from "./Card";
 
-const Cards = ({ cocktails }) => {
+const Cards = ({ cocktails }: { cocktails: CardCocktail[] }) => {
   return (
     <section className="articles">
       {cocktails.map((cocktail, index) => (
